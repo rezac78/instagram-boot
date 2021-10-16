@@ -5,23 +5,12 @@ describe('My first Test', function(){
                it('visits the kitchen snik', function(){
                               // find address websitesddc
                               cy.visit('https://www.instagram.com/accounts/login/')
+                              cy.wait(5000)
 
                               cy.get("input[name=username]").type(email)
-
                               cy.get("input[name=password]").type(password)
-
                               cy.get("button[type=submit]").click()
-
-
                               cy.get("#LWmhU _0aCwM").click()
-                              
-
-                              
-                              // cy.get(".o-form__field-frame").type(email)
-
-
-
-
-                              // cy.get("button[type=submit]").click()             
+                                         
                })
 })
