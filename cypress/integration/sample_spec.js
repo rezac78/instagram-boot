@@ -1,19 +1,19 @@
 describe("My first Test", function () {
-         it('visits and login wordpress page', function(){
-                  // find address websitesddc
-                  cy.visit('https://another.live-website.com/wp-admin/plugin-install.php?s=Plugin%20Installer%20from%20public%20URL&tab=search&type=term')
-                  cy.wait(2000)
-                  cy.get('input[type="text"]').type("saeid")
-                  cy.get('input[type="password"]').type("2121312Ss!")
-                  cy.get('input[type="submit"]').first().click()
-                  cy.get('button[type="button"]').then((e) => {
-                        if(e.find('button[class="button"]').prevObject[2].innerText !== "Active"){
-                                cy.get(".install-now").eq(0).click()
-                                cy.wait(2000)
-                                cy.get('.activate-now').eq(0).click()
-                        }
-                  });
-         })
+        //  it('visits and login wordpress page', function(){
+        //           // find address websitesddc
+        //           cy.visit('https://another.live-website.com/wp-admin/plugin-install.php?s=Plugin%20Installer%20from%20public%20URL&tab=search&type=term')
+        //           cy.wait(2000)
+        //           cy.get('input[type="text"]').type("saeid")
+        //           cy.get('input[type="password"]').type("2121312Ss!")
+        //           cy.get('input[type="submit"]').first().click()
+        //           cy.get('button[type="button"]').then((e) => {
+        //                 if(e.find('button[class="button"]').prevObject[2].innerText !== "Active"){
+        //                         cy.get(".install-now").eq(0).click()
+        //                         cy.wait(2000)
+        //                         cy.get('.activate-now').eq(0).click()
+        //                 }
+        //           });
+        //  })
          it('Install plugin',function(){
                   cy.wait(2000)
                   cy.visit('https://another.live-website.com/wp-admin/plugins.php?page=plgf_pipu01_page')
